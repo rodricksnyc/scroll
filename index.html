@@ -41,6 +41,7 @@
     position:relative;
     height: 100vh;
     padding-right:15%;
+
   }
 
 
@@ -79,23 +80,16 @@
   stroke-width:15px;
 }
 
+.cls-1{
+  fill:none;
+  stroke:#e5e5e5;
+  stroke-miterlimit:10;
+  stroke-width:15px;
+}
+
 .path {
 
 stroke:#22bbad;
-stroke-dasharray:3428;
-stroke-dashoffset:3428;
-/* animation: dash 8s linear forwards; */
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-/* .cls-1.new2 {
-
-stroke:red;
 stroke-dasharray:3428;
 stroke-dashoffset:3428;
 animation: dash 8s linear forwards;
@@ -105,7 +99,33 @@ animation: dash 8s linear forwards;
   to {
     stroke-dashoffset: 0;
   }
-} */
+}
+
+.cls-1.new2 {
+
+stroke:red;
+stroke-dasharray:3428;
+stroke-dashoffset:3428;
+/* animation: dash 8s linear forwards; */
+}
+
+.cls-1.new1 {
+
+stroke:red;
+stroke-dasharray:3428;
+stroke-dashoffset:3428;
+/* animation: dash 8s linear forwards; */
+}
+
+.animation {
+  animation: dash 8s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 .st0 {
   fill:none;
   stroke:#e5e5e5;
@@ -118,6 +138,10 @@ stroke:#22bbad;
 
 
 }
+.content-spacer {
+  height: 10vw;
+}
+
 
 </style>
 <body>
@@ -127,27 +151,25 @@ stroke:#22bbad;
 
 <div class="wrapper">
 
-  <!-- <div class="graphic">
-<img src="img/svg.svg">
-</div> -->
-<!-- <div class="graphic2"></div> -->
-  <!-- <svg class="mainCircle" id="main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1259.49 1490.4">
-    <defs>
+    <center><h1>LINDFGBUODGFHUOBVDRIHUOGERHIOVSUOBVRHOUBVESBIUVEWBUO<h1></center>
+  <div class="content-spacer"></div>
 
-    </defs>
-    <title></title>
-    <g id="Layer_2" data-name="Layer 2">
-      <g id="Content">
+
+  <svg id="main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1259.49 1490.4">
+
+      <g>
         <path class="cls-1 two" d="M464.08,234.89V1293.94c0,104.36,84.6,189,189,189h553.13"/>
-        <path class="cls-1 new2" d="M464.08,234.89V1293.94c0,104.36,84.6,189,189,189h553.13"/>
+        <path class="cls-1 new1" d="M464.08,234.89V1293.94c0,104.36,84.6,189,189,189h553.13"/>
+      </g>
+      <g>
         <path class="cls-1 one" d="M0,7.5H276.08c103.83,0,188,84.17,188,188v39.39"/>
-        <path class="cls-1 new" d="M0,7.5H276.08c103.83,0,188,84.17,188,188v39.39"/>
+        <path class="cls-1 new2" d="M0,7.5H276.08c103.83,0,188,84.17,188,188v39.39"/>
         <circle class="cls-1 three" cx="859.1" cy="700.35" r="392.89"/>
       </g>
-    </g>
-  </svg> -->
 
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  </svg>
+
+  <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   	 viewBox="0 0 1277 2128.4" style="enable-background:new 0 0 1277 2128.4;" xml:space="preserve">
 
   <g>
@@ -199,12 +221,12 @@ stroke:#22bbad;
   	<path class="st0" d="M1236.3,2079.5H683.2c-108.4,0-196.5-88.1-196.5-196.4v-789.7h15v789.7c0,100.2,81.3,181.5,181.5,181.5h553.1
   		V2079.5z"/>
 
-      <path class="path st0" d="M1140,976.8l-10.8,10.5c-36.2-37.3-78.8-66.4-126.3-86.4c-45.9-19.4-94.6-29.6-144.6-30.3
+      <path class="st0" d="M1140,976.8l-10.8,10.5c-36.2-37.3-78.8-66.4-126.3-86.4c-45.9-19.4-94.6-29.6-144.6-30.3
         c-50.1-0.7-99,8.1-145.4,26.2c-48.1,18.7-91.4,46.6-128.7,82.8c-35.7,34.7-63.9,75.1-83.9,120.3l-13.7-6.1
         c20.7-46.9,50.1-89,87.1-125c38.7-37.6,83.8-66.6,133.7-86.1c48.3-18.8,99-27.9,151.1-27.2c52,0.7,102.5,11.4,150.3,31.5
         C1058.2,907.8,1102.3,938,1140,976.8z"/>
   </g>
-  </svg>
+  </svg> -->
 
 
   <!-- <div class="graphic">
@@ -228,31 +250,97 @@ stroke:#22bbad;
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 
-  <!-- <script src="js/bootstrap.js"></script> -->
+ <!-- <script src="js/bootstrap.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/index.js"></script>
 
-  <script src="js/TweenMax.min.js"></script>
+  <script src="js/TweenMax.min.js"></script> -->
 
   <script>
+//
+//   $(document).ready(function() {
+//   //variable for the 'stroke-dashoffset' unit
+//   var $dashOffset = $(".path").css("stroke-dashoffset");
+//   //on a scroll event - execute function
+//   $(window).scroll(function() {
+//     //calculate how far down the page the user is
+//     var $percentageComplete = (($(window).scrollTop() / ($("html").height() - $(window).height())) * 100);
+//     //convert dashoffset pixel value to interger
+//     var $newUnit = parseInt($dashOffset, 10);
+//     //get the value to be subtracted from the 'stroke-dashoffset'
+//     var $offsetUnit = $percentageComplete * ($newUnit / 100);
+//     //set the new value of the dashoffset to create the drawing effect
+//     $(".path").css("stroke-dashoffset", $newUnit - $offsetUnit);
+//   });
+//
+//
+// });
+//
 
-  $(document).ready(function() {
-  //variable for the 'stroke-dashoffset' unit
-  var $dashOffset = $(".path").css("stroke-dashoffset");
-  //on a scroll event - execute function
-  $(window).scroll(function() {
-    //calculate how far down the page the user is
-    var $percentageComplete = (($(window).scrollTop() / ($("html").height() - $(window).height())) * 100);
-    //convert dashoffset pixel value to interger
-    var $newUnit = parseInt($dashOffset, 10);
-    //get the value to be subtracted from the 'stroke-dashoffset'
-    var $offsetUnit = $percentageComplete * ($newUnit / 100);
-    //set the new value of the dashoffset to create the drawing effect
-    $(".path").css("stroke-dashoffset", $newUnit - $offsetUnit);
-  });
 
 
-});
+$(window).on('scroll', function() {
+  var screenTop = $(window).scrollTop();
+  var screenBottom = $(window).scrollTop() + window.innerHeight;
+
+  $('g').each(function() {
+      var elementTop = $(this).offset().top;
+      var elementBottom = $(this).offset().top + $(this).outerHeight();
+
+      if ((screenBottom > elementTop + ($(this).find('.cls-1').height() + 800)) && (screenTop < elementBottom)) {
+          $('g').removeClass('active')
+          $(this).addClass('active')
+      } else {
+          $(this).removeClass('active')
+      }
+  })
+
+
+
+if ($('g').hasClass('active')) {
+
+
+$('.cls-1').addClass('animation');
+
+
+}
+
+
+})
+
+
+    // var draw = $("#top");
+    // var drawTop = draw.offset().top;
+    // var windowHeight = $(window).height();
+    //
+    //
+    // var draw2 = $("#middle");
+    // var drawMiddle = draw2.offset().top;
+    // var windowHeight = $(window).height();
+    //
+    // var windowHeight = $(window).height();
+    //
+    // $(window).scroll(function() {
+    //     var scroll = $(window).scrollTop();
+    //
+    //
+    //
+    //
+    //     if ( scroll >= ( drawTop - windowHeight )) {
+    //       $('.cls-1.new2').addClass('animation');
+    //     }
+    //
+    //
+    //     if ( scroll >= ( drawMiddle - windowHeight )) {
+    //       $('.cls-1.new1').addClass('animation');
+    //     }
+    //
+    //
+    //
+    // });
+
+
+
 
 </script>
 
